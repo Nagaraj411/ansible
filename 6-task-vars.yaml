@@ -1,0 +1,14 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars: # Description: This section defines variables that are available to all tasks in this play.
+  # Variables are used to store data that can be reused throughout the play.
+    course: "Ansible Basics" 
+    duration: "4 weeks"
+  tasks:
+    - name: print course information
+      vars:
+        course: shell scripting with ansible
+        duration: 4 weeks
+        ansible.builtin.debug:
+          msg: "Course Name: {{ course }}, Course Duration: {{ duration }}" 
