@@ -4,4 +4,3 @@
   tasks: # list of tasks to be executed
     - name: ping the Server
       ansible.builtin.ping: # module to ping the server
-        msg: "Pinging the server" # message to be displayed
