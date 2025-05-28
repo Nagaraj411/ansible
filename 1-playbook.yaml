@@ -3,5 +3,4 @@
   hosts:  frontend  # playbook to ping the server
   tasks: # list of tasks to be executed
   - name: ping the Server
-    ansible.builtin.ping: # module to ping the server
-    msg: "ping the server" # message to be displayed
+    ansible.builtin.ping: # module to ping the server # syntax module options
