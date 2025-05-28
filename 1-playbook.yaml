@@ -1,6 +1,7 @@
+#interview Question: Write a playbook to ping the server
 - name: Ping the Server
-  hostes:frontend  # playbook to ping the server
+  hosets:frontend  # playbook to ping the server
   tasks: # list of tasks to be executed
     - name: ping the Server
       ansible.builtin.ping: # module to ping the server
-      
+        msg: "Pinging the server" # message to be displayed
