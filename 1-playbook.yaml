@@ -2,5 +2,5 @@
 - name: Ping the Server
   hosts:  frontend  # playbook to ping the server
   tasks: # list of tasks to be executed
-    - name: ping the Server
+  - name: ping the Server
       ansible.builtin.ping: # module to ping the server
