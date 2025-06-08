@@ -1,0 +1,12 @@
+plugin: amaxon.aws.aws_ec2
+regions:
+- us-east-1
+filters: 
+ tag:name: frontend
+ instance-state-name: running
+hostnames:
+- public_ip_address
+compose: # this will set the to connect public ip address without changing the hostname
+  ansible_host: public_ip_address
+
+
